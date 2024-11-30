@@ -1,0 +1,10 @@
+import random
+
+print('Olá, seja bem vindo ao setor Kronus')
+nome_jogador = input('Digite o seu nome por favor:')
+
+if nome_jogador.lower() == "mozart":
+    dano = sum(random.randint(1,100) for _ in range(100))
+    print(f'você toma {dano} pontos de dano!')
+else:
+    print(f'seja bem vindo {nome_jogador}')
